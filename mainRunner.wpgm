@@ -1,0 +1,29 @@
+
+import wollok.game.*
+import bart.*
+import example.pepita
+import obstaculos.*
+import spawner.*
+
+program PepitaGame {
+	game.title("bart")
+	game.height(10)
+	game.width(30)
+	game.boardGround("housimpsons.jpg")
+
+	game.addVisual(bart)
+	game.addVisual(vida)
+	keyboard.up().onPressDo({bart.saltar()})
+	keyboard.h().onPressDo({bart.lastimado()})
+
+
+	spawner.iniciar()	
+
+	game.onTick(85, "gravedad", {bart.procesarGravedad()})
+	game.onTick(100, "logicaObstaculos", {spawner.procesarObstaculos()})
+
+	game.start()
+
+}
+
+	

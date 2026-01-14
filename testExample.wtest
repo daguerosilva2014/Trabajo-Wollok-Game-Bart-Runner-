@@ -1,0 +1,19 @@
+import example.pepita
+import bart.*
+import obstaculos.*
+describe "group of tests for bart" {
+
+  test "bart pierde vida" {
+    const obstaculo = new ObstaculoNormal (nombre = "rosquilla",base=2,altura=2, alturaMaxima=3)
+    obstaculo.colisionarCon(bart)
+    assert.equals(2, vida.vidaActual())
+  }
+
+  test "bart suma vida" {
+    vida.pierdeVida()
+    const botiquin = new DuffVida (nombre = "duff", base = 2, altura =2, alturaMaxima = 2)
+    botiquin.colisionarCon(bart)
+    assert.equals(3,vida.vidaActual())
+  }
+
+}
