@@ -18,8 +18,8 @@ Un videojuego de plataformas tipo "Endless Runner" desarrollado en **Wollok** pa
 ## Estructura del Proyecto
 
 * `/src`: Código fuente.
-    * [cite_start]`bart.wlk`: Lógica del personaje, gravedad y movimiento[cite: 626].
-    * [cite_start]`obstaculos.wlk`: Clases de enemigos y power-ups (Herencia)[cite: 614].
-    * [cite_start]`spawner.wlk`: Lógica de generación de entidades[cite: 621].
-    * [cite_start]`mainRunner.wpgm`: Punto de entrada y configuración del juego[cite: 619].
+    * `bart.wlk`: Lógica del personaje, gravedad y movimiento.
+    * `obstaculos.wlk`: Clases de enemigos y power-ups (Herencia).
+    * `spawner.wlk`: Lógica de generación de entidades.
+    * `mainRunner.wpgm`: Punto de entrada y configuración del juego.
 * `/assets`: Imágenes y recursos gráficos.
