@@ -4,9 +4,9 @@ Un videojuego de plataformas tipo "Endless Runner" desarrollado en **Wollok** pa
 
 ## Características Técnicas
 
-* [cite_start]**Motor de Física Personalizado:** Implementación manual de gravedad y salto mediante vectores de posición en el loop del juego (`game.onTick`)[cite: 620, 626].
-* [cite_start]**Sistema de Colisiones (Hitboxes):** Lógica de intersección de rectángulos (`Pair` x/y) para detectar colisiones precisas entre el personaje y entidades dinámicas[cite: 616].
-* [cite_start]**Generación Procedural (Spawner):** Instanciación aleatoria de obstáculos y power-ups basada en probabilidad, utilizando polimorfismo para tratar a todas las entidades bajo una interfaz común pero con comportamientos distintos[cite: 621, 623].
+* **Motor de Física Personalizado:** Implementación manual de gravedad y salto mediante vectores de posición en el loop del juego (`game.onTick`).
+* **Sistema de Colisiones (Hitboxes):** Lógica de intersección de rectángulos (`Pair` x/y) para detectar colisiones precisas entre el personaje y entidades dinámicas.
+* [cite_start]**Generación Procedural (Spawner):** Instanciación aleatoria de obstáculos y power-ups basada en probabilidad, utilizando polimorfismo para tratar a todas las entidades bajo una interfaz común pero con comportamientos distintos.
 * **Gestión de Estados:** Manejo de vida, "Game Over" y puntuación mediante objetos dedicados.
 
 ## Tecnologías
